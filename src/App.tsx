@@ -8,7 +8,6 @@ const useAppDispatch: () => AppDispatch = useDispatch;
 const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 
 const App = () => {
-  // 2. State local pour l'input texte
   const [text, setText] = useState("");
 
   // 3. Dispatch typé
