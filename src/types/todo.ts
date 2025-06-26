@@ -1,8 +1,8 @@
 
-export interface Todo {
+export interface TodoType {
     id: number;
     text: string;
     completed: boolean;
 }
 
-export type TodoState = Todo[];
+export type TodoStateType = TodoType[];

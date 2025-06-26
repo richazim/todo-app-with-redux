@@ -1,9 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { TodoState } from "../../../types/todo";
+import { TodoStateType } from "../../../types/todo";
 
-const initialState: TodoState = [];
+const initialState: TodoStateType = [];
 
-// 4. Création du slice Redux
 const todoSlice = createSlice({
   name: "todos",
   initialState,
@@ -24,8 +23,5 @@ const todoSlice = createSlice({
   },
 });
 
-// 5. Export des actions
 export const { addTodo, deleteTodo } = todoSlice.actions;
-
-// 6. Export du reducer
 export const todoReducer = todoSlice.reducer;
